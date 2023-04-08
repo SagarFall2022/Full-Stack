@@ -1,0 +1,121 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AwsStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AwsStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/AwsStack/MyTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "MyTable794EDED1"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:453:92)",
+              "new Table (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:1210:38)",
+              "new AwsStack (C:\\Users\\sagar\\Fovus_project\\AWS\\lib\\aws-stack.ts:23:19)",
+              "Object.<anonymous> (C:\\Users\\sagar\\Fovus_project\\AWS\\bin\\aws.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1254:14)",
+              "Module.m._compile (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1308:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1117:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:958:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "phase4 (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\bin.ts:649:14)",
+              "bootstrap (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\bin.ts:95:10)",
+              "main (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\bin.ts:55:10)",
+              "Object.<anonymous> (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1254:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1308:10)",
+              "Module.load (node:internal/modules/cjs/loader:1117:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:958:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/AwsStack/MyTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyTable794EDED1",
+            "trace": [
+              "new Table (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\aws-dynamodb\\lib\\table.ts:1180:18)",
+              "new AwsStack (C:\\Users\\sagar\\Fovus_project\\AWS\\lib\\aws-stack.ts:23:19)",
+              "Object.<anonymous> (C:\\Users\\sagar\\Fovus_project\\AWS\\bin\\aws.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1254:14)",
+              "Module.m._compile (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1308:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1117:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:958:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "phase4 (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\bin.ts:649:14)",
+              "bootstrap (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\bin.ts:95:10)",
+              "main (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\bin.ts:55:10)",
+              "Object.<anonymous> (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\ts-node\\src\\bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1254:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1308:10)",
+              "Module.load (node:internal/modules/cjs/loader:1117:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:958:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/AwsStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:180:23)",
+              "process.<anonymous> (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:131:45)",
+              "Object.onceWrapper (node:events:628:26)",
+              "process.emit (node:events:513:28)",
+              "process.emit (node:domain:489:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:745:40)"
+            ]
+          }
+        ],
+        "/AwsStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:31:27)",
+              "C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:180:23)",
+              "process.<anonymous> (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@aws-cdk\\core\\lib\\app.ts:131:45)",
+              "Object.onceWrapper (node:events:628:26)",
+              "process.emit (node:events:513:28)",
+              "process.emit (node:domain:489:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (C:\\Users\\sagar\\Fovus_project\\AWS\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:745:40)"
+            ]
+          }
+        ]
+      },
+      "displayName": "AwsStack"
+    }
+  }
+}
